@@ -12,7 +12,7 @@ A [ESLint](http://eslint.org/) config for [Natural Atlas](https://github.com/nat
 
 ### Without React
 
-1. `npm install --save-dev eslint-config-naturalatlas`
+1. `npm install --save-dev eslint eslint-config-naturalatlas`
 2. add `"extends": "naturalatlas/base"` to your .eslintrc
 3. add `eslint --fix ./lib/**` to package.json `test` script\
 
