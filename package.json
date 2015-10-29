@@ -2,7 +2,7 @@
   "name": "eslint-config-naturalatlas",
   "version": "0.1.0",
   "description": "Natural Atlas ESLint configuration",
-  "main": "bas.js",
+  "main": "base.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/naturalatlas/eslint-config-naturalatlas/issues"
   },
-  "homepage": "https://github.com/naturalatlas/eslint-config-naturalatlas#readme"
+  "homepage": "https://github.com/naturalatlas/eslint-config-naturalatlas#readme",
+  "dependencies": {
+    "extend": "^3.0.0"
+  }
 }
