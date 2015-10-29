@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-naturalatlas",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Natural Atlas ESLint configuration",
   "main": "base.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "homepage": "https://github.com/naturalatlas/eslint-config-naturalatlas#readme",
   "dependencies": {
     "extend": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "eslint": "^1.7.3",
+    "mocha": "^2.3.3"
   }
 }

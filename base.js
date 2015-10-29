@@ -117,7 +117,7 @@ module.exports = {
 		/**
 		 * Style
 		 */
-		'indent': [2, "tab"],                // http://eslint.org/docs/rules/indent
+		'indent': [2, "tab", {'SwitchCase': 1}],                // http://eslint.org/docs/rules/indent
 		'brace-style': [
 			2,               // http://eslint.org/docs/rules/brace-style
 			'1tbs', {
