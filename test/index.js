@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 var fs     = require('fs');
 var path   = require('path');
 var exec   = require('child_process').exec;
@@ -15,8 +16,28 @@ describe('eslint --fix', function() {
 			fs.writeFileSync(__dirname + '/output/out.js', actual); // for debugging
 
 			if (err) {
-				if (stdout) console.log('stdout:', stdout);
-				if (stderr) console.log('stderr:', stderr);
+				console.log('stdout:', stdout || '(none)');
+				console.log('stderr:', stderr || '(none)');
+				throw err;
+			}
+
+			var expected = fs.readFileSync(__dirname + '/fixtures/fix-output.js', 'utf8');
+			assert.equal(actual, expected);
+			done();
+		});
+	});
+	it('should correct source properly [react]', function(done) {
+		var input = __dirname + '/fixtures/fix-input.js';
+
+		var original = fs.readFileSync(input, 'utf8');
+		exec(bin + ' ' + input + ' -c react.js --fix', function(err, stdout, stderr) {
+			var actual = fs.readFileSync(input, 'utf8');
+			fs.writeFileSync(input, original); // restore original
+			fs.writeFileSync(__dirname + '/output/out-react.js', actual); // for debugging
+
+			if (err) {
+				console.log('stdout:', stdout || '(none)');
+				console.log('stderr:', stderr || '(none)');
 				throw err;
 			}
 
