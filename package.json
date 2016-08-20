@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-naturalatlas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Natural Atlas ESLint configuration",
   "main": "base.js",
   "scripts": {
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "chai": "^3.4.0",
-    "eslint": "^1.7.3",
     "mocha": "^2.3.3"
   }
 }

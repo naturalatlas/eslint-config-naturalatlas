@@ -37,7 +37,7 @@ module.exports = {
 		/**
 		 * Variables
 		 */
-		'no-shadow': 1,
+		'no-shadow': 0,
 		'no-shadow-restricted-names': 2,
 		'no-unused-vars': [2, {
 			'vars': 'local',
@@ -110,14 +110,13 @@ module.exports = {
 		'no-throw-literal': 2,
 		'no-with': 2,
 		'radix': 2,
-		//'vars-on-top': 2,
 		'wrap-iife': [2, 'any'],
 		'yoda': 2,
 
 		/**
 		 * Style
 		 */
-		'indent': [2, "tab", {'SwitchCase': 1}],
+		'indent': [2, 'tab', {'SwitchCase': 1}],
 		'brace-style': [
 			2,
 			'1tbs', {
