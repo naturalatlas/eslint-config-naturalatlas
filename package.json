@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-naturalatlas",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Natural Atlas ESLint configuration",
   "main": "index.js",
   "scripts": {
