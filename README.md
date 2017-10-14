@@ -1,35 +1,33 @@
-## eslint-config-naturalatlas
+# eslint-config-naturalatlas
 
-A [ESLint](http://eslint.org/) config for [Natural Atlas](https://github.com/naturalatlas) projects.
+A [ESLint](http://eslint.org/) config for [Natural Atlas](https://github.com/naturalatlas) projects that's based off [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb).
 
-## Usage
+### Installation
 
-### With React
+```
+$ npm install -g install-peerdeps
+$ install-peerdeps --dev eslint-config-naturalatlas
+```
 
-1. `npm install --save-dev eslint eslint-plugin-react eslint-config-naturalatlas`
-2. add `"extends": "naturalatlas/react"` to your .eslintrc
-3. add `eslint --fix ./lib/**` to package.json `test` script\
+### Usage
 
-### Without React
+```js
+// modern / transpiled environments
+{"extends": "naturalatlas"}
 
-1. `npm install --save-dev eslint eslint-config-naturalatlas`
-2. add `"extends": "naturalatlas/base"` to your .eslintrc
-3. add `eslint --fix ./lib/**` to package.json `test` script\
+// when running directly
+{"extends": "naturalatlas/node"}
+{"extends": "naturalatlas/node4"}
+```
 
 ### Overrides
 
 Some of the rules may be too strict for your project,
-but you can easily override any rules or options like this:
+but you can easily override any rules or options in your `.eslintrc`:
 
 ```json
 {
-	"extends": "naturalatlas/base",
-	"rules": {
-		"space-before-function-paren": 0,
-		"indent": [2, 2]
-	},
-	"env": {
-		"mocha": true
-	}
+	"extends": "naturalatlas",
+	"rules": {}
 }
 ```

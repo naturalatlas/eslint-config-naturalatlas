@@ -21,11 +21,14 @@
     "url": "https://github.com/naturalatlas/eslint-config-naturalatlas/issues"
   },
   "homepage": "https://github.com/naturalatlas/eslint-config-naturalatlas#readme",
-  "dependencies": {
-    "extend": "^3.0.0"
+  "peerDepedencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   },
-  "devDependencies": {
-    "chai": "^3.4.0",
-    "mocha": "^2.3.3"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
