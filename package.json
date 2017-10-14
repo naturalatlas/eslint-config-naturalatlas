@@ -2,7 +2,7 @@
   "name": "eslint-config-naturalatlas",
   "version": "1.0.1",
   "description": "Natural Atlas ESLint configuration",
-  "main": "base.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha ./test/index.js"
   },
