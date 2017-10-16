@@ -21,7 +21,7 @@
     "url": "https://github.com/naturalatlas/eslint-config-naturalatlas/issues"
   },
   "homepage": "https://github.com/naturalatlas/eslint-config-naturalatlas#readme",
-  "peerDepedencies": {
+  "peerDependencies": {
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-config-airbnb-base": "^12.0.2",
